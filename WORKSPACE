@@ -15,4 +15,16 @@ rules_rust_dependencies()
 
 rust_register_toolchains(
     edition = "2021",
+    extra_target_triples = [
+        "aarch64-unknown-linux-gnu",
+        "x86_64-apple-darwin",
+    ],
 )
+# rust_repository_set(
+#     name = "rust_linux_aarch64",
+#     edition = "2021",
+#     exec_triple = "aarch64-unknown-linux-gnu",
+#     extra_target_triples = [],
+#     register_toolchain = True,
+#     version = "1.64.0",
+# )
